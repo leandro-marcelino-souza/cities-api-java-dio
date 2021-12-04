@@ -34,7 +34,7 @@ dependencies {
 
 
 	//Postgres
-		implementation 'org.postgresql:postgresql:42.2.5.jre7'
+		 //implementation 'org.postgresql:postgresql:42.2.5.jre7'
 	  	 runtimeOnly 'org.postgresql:postgresql'
 		// https://mvnrepository.com/artifact/org.postgresql/postgresql
 		//implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.1'
