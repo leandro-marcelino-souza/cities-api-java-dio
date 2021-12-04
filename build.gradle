@@ -21,12 +21,23 @@ dependencies {
 		testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 		//Hibernate
-		implementation 'org.hibernate:hibernate-core:5.4.2.Final'
-		implementation 'org.hibernate:hibernate-entitymanager:5.4.2.Final'
+		//implementation 'org.hibernate:hibernate-core:5.4.2.Final'
+		//implementation 'org.hibernate:hibernate-entitymanager:5.4.2.Final'
+		// https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager
+		implementation group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.6.1.Final'
+		// https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+		implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.6.1.Final'
+		// https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api
+		implementation group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.1-api', version: '1.0.2.Final'
+
 
 		//Postgres
 		implementation 'org.postgresql:postgresql:42.2.5.jre7'
-	    runtimeOnly 'org.postgresql:postgresql'
+	  	 runtimeOnly 'org.postgresql:postgresql'
+		// https://mvnrepository.com/artifact/org.postgresql/postgresql
+		//implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.1'
+		// https://mvnrepository.com/artifact/postgresql/postgresql
+		//implementation group: 'postgresql', name: 'postgresql', version: '9.1-901-1.jdbc4'
 
 
 

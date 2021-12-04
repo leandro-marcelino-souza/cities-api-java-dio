@@ -1,4 +1,4 @@
-package com.dio.leandrosouza.citiesapi.repository;
+package com.dio.leandrosouza.citiesapi.countries.repository;
 
 import com.dio.leandrosouza.citiesapi.countries.Country;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,9 +1,9 @@
-package com.dio.leandrosouza.citiesapi;
+package com.dio.leandrosouza.citiesapi.countries;
 
 import java.util.Optional;
 
 import com.dio.leandrosouza.citiesapi.countries.Country;
-import com.dio.leandrosouza.citiesapi.repository.CountryRepository;
+import com.dio.leandrosouza.citiesapi.countries.repository.CountryRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
