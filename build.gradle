@@ -29,9 +29,11 @@ dependencies {
 		implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.6.1.Final'
 		// https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api
 		implementation group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.1-api', version: '1.0.2.Final'
+		// https://mvnrepository.com/artifact/com.vladmihalcea/hibernate-types-52
+		implementation group: 'com.vladmihalcea', name: 'hibernate-types-52', version: '2.14.0'
 
 
-		//Postgres
+	//Postgres
 		implementation 'org.postgresql:postgresql:42.2.5.jre7'
 	  	 runtimeOnly 'org.postgresql:postgresql'
 		// https://mvnrepository.com/artifact/org.postgresql/postgresql
