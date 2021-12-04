@@ -1,13 +1,12 @@
 package com.dio.leandrosouza.citiesapi;
 
-import java.util.List;
 import java.util.Optional;
 
 import com.dio.leandrosouza.citiesapi.countries.Country;
 import com.dio.leandrosouza.citiesapi.repository.CountryRepository;
-import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,8 +32,14 @@ public class CountryResource {
     //implementando retornos na class CountryResource
 
     @GetMapping("/{id}")
-    public Country getOne(@PathVariable Long id){
+    public ResponseEntity<Object> getOne(@PathVariable Long id){
         Optional<Country> optional = repository.findById(id);
-        return optional.get();
+
+        //tratando exceção
+        if (optional.isPresent()) {
+            return ResponseEntity.ok().body(optional.get());
+        } else {
+            return  ResponseEntity.notFound().build();
+        }
     }
 }
