@@ -1,10 +1,6 @@
 package com.dio.leandrosouza.citiesapi.distances.service;
 
-import static java.lang.Math.atan2;
-import static java.lang.Math.cos;
-import static java.lang.Math.sin;
-import static java.lang.Math.sqrt;
-import static java.lang.Math.toRadians;
+
 import java.util.Arrays;
 import java.util.List;
 

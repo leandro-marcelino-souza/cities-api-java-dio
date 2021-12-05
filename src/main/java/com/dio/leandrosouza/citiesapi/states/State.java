@@ -1,4 +1,4 @@
-package com.dio.leandrosouza.citiesapi.staties;
+package com.dio.leandrosouza.citiesapi.states;
 
 import java.util.List;
 import javax.persistence.Basic;
